@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace GRAFOS1
 {
-     class Program
+    class Program
     {
         static void Main(string[] args)
         {
@@ -38,6 +38,15 @@ namespace GRAFOS1
             miGrafo.AdicionarArista(6, 5, 1);
 
             miGrafo.MuestraAdyacencia();
+
+            Console.WriteLine("Dame el indice del nodo inicio");
+            dato = Console.ReadLine();
+            inicio = Convert.ToInt32(dato);
+
+            Console.WriteLine("Dame el indice del nodo final");
+            dato = Console.ReadLine();
+            final = Convert.ToInt32(dato);
         }
+    
+      }
     }
-}
